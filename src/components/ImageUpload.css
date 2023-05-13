@@ -1,0 +1,52 @@
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dropzone {
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .dropzones  {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .upload-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upload-icon span {
+    margin-top: 0.5rem;
+  }
+  
+  .upload-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .upload-button:hover {
+    background-color: #0069d9;
+  }
+  
