@@ -24,8 +24,12 @@ function ImageUpload() {
     e.preventDefault();
     const formData = new FormData();
     formData.append("image", file);
+    // let formData = {
+    //   name:"kiruththigan"
+    // }
     axios
       .post(`http://cffd-34-91-112-206.ngrok.io/classify_face`, formData)
+      // .post(`http://localhost:3002/`, formData)
       .then((response) => {
         console.log("file uploaded successfully:", response.data);
         if (response.data === "") {
@@ -64,7 +68,7 @@ function ImageUpload() {
     const formData = new FormData();
     formData.append("nic", Name);
     axios
-      .get(`http://cffd-34-91-112-206.ngrok.io/voting`, {nic:Name})
+      .get(`http://cffd-34-91-112-206.ngrok.io/voting`, { nic: Name })
       .then((response) => {
         console.log("file uploaded successfully:", response.data);
         setLoading(false);
